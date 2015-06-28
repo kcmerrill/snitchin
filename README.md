@@ -105,3 +105,8 @@ Remember how I mentioned above that by default, you're provided with a default c
 ```
 $log['default']->info('A valid CSRF token was passed!');
 ```
+
+#Screenshots or it never happened
+Geez. Tough crowd. Here you go! In the example below, we are taking advantage of the standard snitcher(console output) and also the slack snitcher. You can see, I have my slack window open, and I have the slack snitcher only to repond to events emitted greater than 61(the default custom level).
+
+![Default snitchin behavior](https://raw.githubusercontent.com/kcmerrill/snitchin/master/screenshots/wqHZ3NHT87.gif)
