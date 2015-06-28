@@ -25,8 +25,6 @@ class snitchin extends \Pimple\Container {
     }
 
     function __call($method, $params) {
-        foreach($this->keys() as $channel) {
-            call_user_func_array(array($this[$channel], $method), $params);
-        }
+        call_user_func_array(array($this['default'], $method), $params);
     }
 }
