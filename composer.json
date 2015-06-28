@@ -1,0 +1,11 @@
+{
+    "name": "kcmerrill/snitchin",
+    "description": "An snitcher of things",
+    "require": {
+       "pimple/pimple": "~3.0",
+        "guzzlehttp/guzzle": "6.0.1"
+    },
+    "autoload": {
+        "psr-0": {"kcmerrill": "src/"}
+    }
+}
