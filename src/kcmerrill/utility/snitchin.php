@@ -2,7 +2,7 @@
 
 namespace kcmerrill\utility;
 
-class snitchin extends \Pimple {
+class snitchin extends \Pimple\Container {
 
     private $default_level;
     private $default_snitches;
