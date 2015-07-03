@@ -13,7 +13,7 @@ class snitches {
                 }
             }
 
-            file_put_contents($filename, '[' . date('F j, Y, g:i a', $log_entry['timestamp']) . '] ' . str_pad(strtoupper($log_entry['level']['text']), 10, ' ', STR_PAD_RIGHT) . $log_entry['msg'] . ' ' . json_encode($log_entry['additional_params'], TRUE) . PHP_EOL);
+            file_put_contents($filename, '[' . date('F j, Y, g:i a', $log_entry['timestamp']) . '] ' . str_pad(strtoupper($log_entry['level']['text']), 10, ' ', STR_PAD_RIGHT) . $log_entry['msg'] . ' ' . json_encode($log_entry['additional_params'], TRUE) . PHP_EOL, FILE_APPEND);
         };
     }
 
